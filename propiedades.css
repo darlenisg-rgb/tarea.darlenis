@@ -1,0 +1,84 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { background: #ffffff; }
+
+/* Navegación */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: #fff; border-bottom: 1px solid #f2f2f2;
+}
+.logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #333; text-decoration: none; font-weight: 700; }
+.logo span { color: #d4a373; }
+.menu { display: flex; list-style: none; }
+.menu a { color: #777; text-decoration: none; margin-left: 30px; font-size: 0.85rem; letter-spacing: 1px; }
+.menu a:hover { color: #d4a373; }
+
+/* Header */
+.prop-header { text-align: center; padding: 80px 20px; background: #fffcf9; }
+.prop-header span { text-transform: uppercase; letter-spacing: 5px; font-size: 0.7rem; color: #d4a373; font-weight: 600; }
+.prop-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 15px; color: #1a1a1a; }
+.prop-header h1 em { font-weight: 400; }
+
+/* Grid de 9 - Ajuste Perfecto */
+.prop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columnas fijas en PC */
+    gap: 25px; 
+    padding: 60px 8%;
+}
+
+/* Tarjeta Boutique */
+.prop-card {
+    position: relative; 
+    height: 480px; 
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.prop-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 1.2s ease, filter 0.8s ease;
+}
+
+/* El Overlay Blanco Traslúcido */
+.prop-overlay {
+    position: absolute; inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex; flex-direction: column; justify-content: center;
+    align-items: center; text-align: center; padding: 30px;
+    opacity: 0; 
+    transition: all 0.5s ease;
+    transform: translateY(10px);
+}
+
+.prop-card:hover .prop-overlay {
+    opacity: 1; transform: translateY(0);
+}
+
+.prop-card:hover img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+/* Detalles */
+.prop-overlay h3 {
+    font-family: 'Playfair Display', serif; font-size: 1.8rem;
+    color: #1a1a1a; margin-bottom: 15px;
+}
+
+.details {
+    border-top: 1px solid #d4a373; border-bottom: 1px solid #d4a373;
+    padding: 15px 0; margin-bottom: 20px;
+}
+
+.details p { font-size: 0.9rem; color: #666; line-height: 1.6; }
+
+.prop-price {
+    font-size: 1.4rem; font-weight: 400; color: #d4a373;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Responsive para que en móvil se vea 1 por fila */
+@media (max-width: 1024px) { .prop-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 768px) { .prop-grid { grid-template-columns: 1fr; } }
+
+footer { text-align: center; padding: 60px; color: #bbb; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }

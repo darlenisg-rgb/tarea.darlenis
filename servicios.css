@@ -1,0 +1,19 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { background: #fff; color: #444; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; border-bottom: 1px solid #eee; }
+.logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #333; text-decoration: none; font-weight: 700; }
+.logo span { color: #d4a373; }
+.menu { display: flex; list-style: none; }
+.menu a { color: #666; text-decoration: none; margin-left: 30px; font-size: 0.85rem; letter-spacing: 1px; }
+
+.servicios-header { text-align: center; padding: 80px 20px; background: #fafafa; }
+.servicios-header span { text-transform: uppercase; letter-spacing: 5px; font-size: 0.7rem; color: #d4a373; }
+.servicios-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 15px; }
+
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; padding: 80px 8%; }
+.servicio-item { text-align: center; padding: 30px; border-bottom: 1px solid #f0f0f0; transition: 0.3s; }
+.servicio-item:hover { border-color: #d4a373; }
+.serv-icon { font-size: 2rem; color: #d4a373; margin-bottom: 20px; }
+.servicio-item h3 { font-family: 'Playfair Display', serif; margin-bottom: 15px; font-size: 1.4rem; }
+.servicio-item p { color: #888; line-height: 1.8; font-size: 0.95rem; }

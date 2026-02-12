@@ -1,0 +1,31 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+body { background: #fff; color: #333; }
+
+/* Navbar Refinada */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 8%; background: #fff; border-bottom: 1px solid #eee;
+}
+.logo { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #333; text-decoration: none; font-weight: 700; }
+.logo span { color: #d4a373; } /* Oro Suave */
+
+.menu { display: flex; list-style: none; }
+.menu a { color: #666; text-decoration: none; margin-left: 30px; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; }
+.menu a:hover { color: #d4a373; }
+
+/* Hero Balancing */
+.hero { height: 85vh; display: flex; align-items: center; padding: 0 8%; background: #fafafa; }
+.hero-content { flex: 1; padding-right: 50px; }
+.subtitle { text-transform: uppercase; letter-spacing: 4px; font-size: 0.75rem; color: #d4a373; font-weight: 600; display: block; margin-bottom: 15px; }
+.hero-content h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: #1a1a1a; line-height: 1.2; }
+.hero-content h1 em { font-weight: 400; }
+.hero-content p { margin: 25px 0 40px; line-height: 1.8; color: #777; max-width: 450px; }
+
+.btn-chic {
+    padding: 15px 40px; border: 1px solid #d4a373; color: #d4a373; text-decoration: none;
+    text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; transition: 0.4s;
+}
+.btn-chic:hover { background: #d4a373; color: #fff; }
+
+.hero-img { flex: 1.2; height: 70%; border-radius: 100px 100px 0 0; overflow: hidden; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; }
